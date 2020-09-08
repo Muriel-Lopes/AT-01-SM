@@ -1,33 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Camera from 'react-native-vector-icons/MaterialCommunityIcons';
-Camera.loadFont()
-import Exit from 'react-native-vector-icons/Octicons';
-Exit.loadFont()
-import User from 'react-native-vector-icons/FontAwesome';
-User.loadFont()
 
+
+import { Routes }from './src/routes/routes';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <View style={[styles.views, styles.ident1]}>
-        <User name="user" size={30} color="#000"></User>
-        <Text>Perfil</Text></View>
 
-      <View style={[styles.views, styles.ident2]}>
-        <Camera name="camera" size={30} color="#000"></Camera>
-        <Text>Câmera</Text></View>
+    <Routes/>
 
-      <View style={[styles.views, styles.ident3]}>
-        <Exit name="sign-out" size={30} color="#000"></Exit>
-        <Text>Sair</Text></View>
-    </View>
   );
 }
 
-const styles = StyleSheet.create({
+/* const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#DEDEDE',
@@ -72,5 +56,32 @@ const styles = StyleSheet.create({
     elevation: 2,
     paddingTop: 60,
 
-  },
-});
+  }, 
+  });*/
+
+
+
+  /* import { StatusBar } from 'expo-status-bar';
+  import { StyleSheet, Text, View } from 'react-native';
+  import Camera from 'react-native-vector-icons/MaterialCommunityIcons';
+  Camera.loadFont()
+  import Exit from 'react-native-vector-icons/Octicons';
+  Exit.loadFont()
+  import User from 'react-native-vector-icons/FontAwesome';
+  User.loadFont() */
+
+
+  /* { <View style={styles.container}>
+      <View style={[styles.views, styles.ident1]}>
+        <User name="user" size={30} color="#000"></User>
+        <Text>Perfil</Text></View>
+
+      <View style={[styles.views, styles.ident2]}>
+        <Camera name="camera" size={30} color="#000"></Camera>
+        <Text>Câmera</Text></View>
+
+      <View style={[styles.views, styles.ident3]}>
+        <Exit name="sign-out" size={30} color="#000"></Exit>
+        <Text>Sair</Text></View>
+    </View> } */
+
